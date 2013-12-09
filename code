@@ -1,0 +1,26 @@
+//c
+color([1,2,3])
+linear_extrude(height = 60, center = true, convexity = 10, twist = 60)
+polygon(points=[[0,25],[0,35],[5,60],[10,60],[15,40],[15,35],[10,35],[7.5,45],[2.5,30],[7.5,5],[10,25],[15,25],[15,20],[10,0],[5,0]], paths=[[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]]);
+//e
+color("MistyRose")
+linear_extrude(height = 60, center = true, convexity = 10, twist = 60)
+translate([15,0,0])
+polygon(points=[[0,25],[0,35],[5,60],[10,60],[15,40],[15,35],[10,35],[7.5,50],[3,33],[12,33],[12,28],[4,28],[7.5,5],[10,25],[15,25],[15,20],[10,0],[5,0]], paths=[[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]]);
+//r
+color("DarkSlateGray")
+linear_extrude(height = 60, center = true, convexity = 10, twist = 60)
+translate([30,0,0])
+difference(){
+	polygon(points=[[0,25],[0,35],[5,60],[10,60],[15,40],[15,20],[10,0],[5,0]], paths=[[0,1,2,3,4,5,6,7]]);
+	polygon(points=[[7.5,50],[5,40],[10,40]], paths=[[0,1,2]]);
+	polygon(points=[[4,27],[7,5],[7,0],[8,0],[8,5],[11,27]], paths=[[0,1,2,3,4,5]]);
+	polygon(points=[[15,35],[12,32],[15,28]], paths=[[0,1,2]]);}
+
+//o
+color("Lavender")
+linear_extrude(height = 60, center = true, convexity = 10, twist = 60)
+translate([45,0,0])
+difference(){
+	polygon(points=[[0,25],[0,35],[5,60],[10,60],[15,40],[15,20],[10,0],[5,0]], paths=[[0,1,2,3,4,5,6,7]]);
+	polygon(points=[[7.5,45],[2.5,30],[7.5,5],[12.5,30]], paths=[[0,1,2,3]]);}
